@@ -9,6 +9,16 @@
       "id": 2,
       "title": "css",
       "body": "css is ..."
+    },
+    {
+      "title": "",
+      "body": "",
+      "id": 3
+    },
+    {
+      "title": "javascript",
+      "body": "javascript is ...",
+      "id": 4
     }
   ],
   "posts": [
