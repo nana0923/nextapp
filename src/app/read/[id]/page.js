@@ -7,9 +7,12 @@ export default async function Read(props) {
   );
   const topic = await resp.json();
   return (
-    <>
-      <h2>{topic.title}</h2>
-      {topic.body}
-    </>
+    <div className="read">
+      <p>글 상세</p>
+      <div className="contArea">
+        <h2>{topic.title}</h2>
+        {topic.body}
+      </div>
+    </div>
   );
 }

@@ -8,26 +8,33 @@ export function Control() {
   const id = params.id;
   return (
     <ul>
-      <li>
+      <li className="create">
         <Link href="/create">Create</Link>
       </li>
       {id ? (
         <>
-          <li>
+          <li className="update">
             <Link href={"/update/" + id}>Update</Link>
           </li>
-          <li>
+          <li className="delete">
             <input
               type="button"
-              value="delete"
+              value="Delete"
               onClick={() => {
-                const options = { method: "DELETE" };
-                fetch(process.env.NEXT_PUBLIC_API_URL + "topics/" + id, options)
-                  .then((resp) => resp.json)
-                  .then((result) => {
-                    router.push("/");
-                    router.refresh();
-                  });
+                if (confirm("삭제하시겠습니까?")) {
+                  const options = { method: "DELETE" };
+                  fetch(
+                    process.env.NEXT_PUBLIC_API_URL + "topics/" + id,
+                    options
+                  )
+                    .then((resp) => resp.json)
+                    .then((result) => {
+                      router.push("/");
+                      router.refresh();
+                    });
+                } else {
+                  return false;
+                }
               }}
             />
           </li>

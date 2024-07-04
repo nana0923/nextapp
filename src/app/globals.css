@@ -1,3 +1,487 @@
-h1 a {
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+html {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+}
+html {
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+} /* -webkit-user-select:none; 모바일 드래그 막기 */
+body {
+  min-width: 320px;
+  max-width: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #000000;
+} /* 맞는 폰트로 변경 해줘야함 */
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+input,
+button,
+textarea,
+fieldset,
+legend,
+td,
+th {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+table,
+th,
+td {
+  border-collapse: collapse; /*border-spacing: 0;*/
+}
+input,
+textarea,
+button,
+select {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background: none;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+input:focus {
+  outline: none;
+}
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+}
+input[type="text"]::-ms-clear,
+input[type="tel"]::-ms-clear {
+  display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+} /* IE 10, 11의 네이티브 화살표 숨기기 */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+button {
+  overflow: visible\9;
+} /* button fix for ie8 */
+label {
+  cursor: pointer;
+}
+label img {
+  pointer-events: none;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder {
+  color: #999;
+}
+input:-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder {
+  color: #999;
+}
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+textarea::-moz-placeholder {
+  color: #999;
+}
+textarea:-moz-placeholder {
+  color: #999;
+}
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+a {
   text-decoration: none;
+  color: #000000;
+}
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+}
+
+html {
+  min-width: 390px;
+  min-height: 844px;
+  overflow: auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 390px;
+  height: 844px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+/* 글 목록 header */
+header {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+ol {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+ol li a {
+  font-weight: 600;
+}
+ol li a:hover {
+  color: #999;
+}
+
+/* layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 450px;
+  max-height: 450px;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+/* home */
+.home {
+  width: 100%;
+}
+
+.home h2 {
+  margin-bottom: 20px;
+}
+
+.home img {
+  width: 50px;
+  height: 50px;
+}
+
+/* create */
+.create {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 300px;
+  height: 35px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+form input[type="submit"] {
+  background: #dedede;
+}
+
+form input[type="submit"]:hover {
+  background: #b1b1b1;
+}
+
+form textarea {
+  height: 300px;
+  resize: none;
+  padding: 5px 10px;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  outline: 1px solid #000;
+}
+
+/* read */
+.content .read {
+  width: 100%;
+  text-align: left;
+}
+.content .read .contArea {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.content .read .contArea h2 {
+  margin-bottom: 20px;
+}
+
+/* 페이지 바로가기 Control */
+.btnArea p {
+  font-size: 14px;
+  border-top: 1px solid #dedede;
+  padding-top: 10px;
+}
+
+.btnArea ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.btnArea ul li {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.btnArea ul li a {
+  font-size: 13px;
+}
+
+.btnArea ul li.create {
+  background: #ffb835;
+  margin: 0;
+}
+
+.btnArea ul li.update {
+  background: #5be6ff;
+}
+
+.btnArea ul li.delete {
+  background: #ff6e5b;
+}
+
+.btnArea ul li input {
+  font-size: 13px;
 }

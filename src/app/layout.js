@@ -15,20 +15,32 @@ export default async function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <h1>
-          <Link href="/">WEB</Link>
-        </h1>
-        <ol>
-          {topics.map((topic) => {
-            return (
-              <li key={topic.id}>
-                <Link href={`/read/${topic.id}`}>{topic.title}</Link>
-              </li>
-            );
-          })}
-        </ol>
-        {children}
-        <Control />
+        <div className="wrapper">
+          <div className="container">
+            <header>
+              <h1>
+                <Link href="/">Home</Link>
+              </h1>
+              <p>글 목록</p>
+              <ol>
+                {topics.map((topic) => {
+                  return (
+                    <li key={topic.id}>
+                      <Link href={`/read/${topic.id}`}>{topic.title}</Link>
+                    </li>
+                  );
+                })}
+              </ol>
+            </header>
+            <section>
+              <div className="content">{children}</div>
+            </section>
+            <div className="btnArea">
+              <p>페이지 바로가기</p>
+              <Control />
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
